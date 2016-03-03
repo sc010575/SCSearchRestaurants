@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0895F30A76CD9333CB49BCF /* Pods_JustEatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C2092E6D8230D1971ABED58 /* Pods_JustEatSwift.framework */; };
+		C5F081BE1C7884B800340688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F081BD1C7884B800340688 /* AppDelegate.swift */; };
+		C5F081C01C7884B800340688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F081BF1C7884B800340688 /* ViewController.swift */; };
+		C5F081C31C7884B900340688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F081C11C7884B900340688 /* Main.storyboard */; };
+		C5F081C51C7884B900340688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5F081C41C7884B900340688 /* Assets.xcassets */; };
+		C5F081C81C7884B900340688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F081C61C7884B900340688 /* LaunchScreen.storyboard */; };
+		C5F081D31C7884B900340688 /* JustEatSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F081D21C7884B900340688 /* JustEatSwiftTests.swift */; };
+		C5F081DE1C7884B900340688 /* JustEatSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F081DD1C7884B900340688 /* JustEatSwiftUITests.swift */; };
+		C5FE17DF1C78929100C5F4E2 /* ValidationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE17DE1C78929100C5F4E2 /* ValidationUtility.swift */; };
+		C5FE17E11C79AA7500C5F4E2 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE17E01C79AA7500C5F4E2 /* DownloadService.swift */; };
+		C5FE9EA01C7A065D00BFCFAA /* JustEatDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5FE9E9E1C7A065D00BFCFAA /* JustEatDataModel.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5F081CF1C7884B900340688 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5F081B21C7884B800340688 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5F081B91C7884B800340688;
+			remoteInfo = JustEatSwift;
+		};
+		C5F081DA1C7884B900340688 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5F081B21C7884B800340688 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5F081B91C7884B800340688;
+			remoteInfo = JustEatSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1ED346C7A18E355E3E616682 /* Pods-JustEatSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEatSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustEatSwift/Pods-JustEatSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		7C2092E6D8230D1971ABED58 /* Pods_JustEatSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustEatSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAEC5E8A12FC5F2759C8E79 /* Pods-JustEatSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEatSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEatSwift/Pods-JustEatSwift.release.xcconfig"; sourceTree = "<group>"; };
+		C5F081BA1C7884B800340688 /* JustEatSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustEatSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F081BD1C7884B800340688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5F081BF1C7884B800340688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5F081C21C7884B900340688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5F081C41C7884B900340688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5F081C71C7884B900340688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5F081C91C7884B900340688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5F081CE1C7884B900340688 /* JustEatSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustEatSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F081D21C7884B900340688 /* JustEatSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustEatSwiftTests.swift; sourceTree = "<group>"; };
+		C5F081D41C7884B900340688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5F081D91C7884B900340688 /* JustEatSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustEatSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F081DD1C7884B900340688 /* JustEatSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustEatSwiftUITests.swift; sourceTree = "<group>"; };
+		C5F081DF1C7884B900340688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FE17DE1C78929100C5F4E2 /* ValidationUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationUtility.swift; sourceTree = "<group>"; };
+		C5FE17E01C79AA7500C5F4E2 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		C5FE9E9F1C7A065D00BFCFAA /* JustEatDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JustEatDataModel.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5F081B71C7884B800340688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0895F30A76CD9333CB49BCF /* Pods_JustEatSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F081CB1C7884B900340688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F081D61C7884B900340688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BEB8B305FD85F262F615E82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1ED346C7A18E355E3E616682 /* Pods-JustEatSwift.debug.xcconfig */,
+				8BAEC5E8A12FC5F2759C8E79 /* Pods-JustEatSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA6B48CCD11D5AAE62475376 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C2092E6D8230D1971ABED58 /* Pods_JustEatSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5F081B11C7884B800340688 = {
+			isa = PBXGroup;
+			children = (
+				C5FE9E9E1C7A065D00BFCFAA /* JustEatDataModel.xcdatamodeld */,
+				C5F081BC1C7884B800340688 /* JustEatSwift */,
+				C5F081D11C7884B900340688 /* JustEatSwiftTests */,
+				C5F081DC1C7884B900340688 /* JustEatSwiftUITests */,
+				C5F081BB1C7884B800340688 /* Products */,
+				9BEB8B305FD85F262F615E82 /* Pods */,
+				AA6B48CCD11D5AAE62475376 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C5F081BB1C7884B800340688 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5F081BA1C7884B800340688 /* JustEatSwift.app */,
+				C5F081CE1C7884B900340688 /* JustEatSwiftTests.xctest */,
+				C5F081D91C7884B900340688 /* JustEatSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5F081BC1C7884B800340688 /* JustEatSwift */ = {
+			isa = PBXGroup;
+			children = (
+				C5F081BD1C7884B800340688 /* AppDelegate.swift */,
+				C5F081BF1C7884B800340688 /* ViewController.swift */,
+				C5F081C11C7884B900340688 /* Main.storyboard */,
+				C5F081C41C7884B900340688 /* Assets.xcassets */,
+				C5F081C61C7884B900340688 /* LaunchScreen.storyboard */,
+				C5F081C91C7884B900340688 /* Info.plist */,
+				C5FE17DE1C78929100C5F4E2 /* ValidationUtility.swift */,
+				C5FE17E01C79AA7500C5F4E2 /* DownloadService.swift */,
+			);
+			path = JustEatSwift;
+			sourceTree = "<group>";
+		};
+		C5F081D11C7884B900340688 /* JustEatSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5F081D21C7884B900340688 /* JustEatSwiftTests.swift */,
+				C5F081D41C7884B900340688 /* Info.plist */,
+			);
+			path = JustEatSwiftTests;
+			sourceTree = "<group>";
+		};
+		C5F081DC1C7884B900340688 /* JustEatSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5F081DD1C7884B900340688 /* JustEatSwiftUITests.swift */,
+				C5F081DF1C7884B900340688 /* Info.plist */,
+			);
+			path = JustEatSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5F081B91C7884B800340688 /* JustEatSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5F081E21C7884B900340688 /* Build configuration list for PBXNativeTarget "JustEatSwift" */;
+			buildPhases = (
+				130637773F7EA59788E6C98E /* Check Pods Manifest.lock */,
+				C5F081B61C7884B800340688 /* Sources */,
+				C5F081B71C7884B800340688 /* Frameworks */,
+				C5F081B81C7884B800340688 /* Resources */,
+				A2B63D6D08B270A227CF8F79 /* Embed Pods Frameworks */,
+				8D39B6942CE0FC7F7701955A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustEatSwift;
+			productName = JustEatSwift;
+			productReference = C5F081BA1C7884B800340688 /* JustEatSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5F081CD1C7884B900340688 /* JustEatSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5F081E51C7884B900340688 /* Build configuration list for PBXNativeTarget "JustEatSwiftTests" */;
+			buildPhases = (
+				C5F081CA1C7884B900340688 /* Sources */,
+				C5F081CB1C7884B900340688 /* Frameworks */,
+				C5F081CC1C7884B900340688 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5F081D01C7884B900340688 /* PBXTargetDependency */,
+			);
+			name = JustEatSwiftTests;
+			productName = JustEatSwiftTests;
+			productReference = C5F081CE1C7884B900340688 /* JustEatSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5F081D81C7884B900340688 /* JustEatSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5F081E81C7884B900340688 /* Build configuration list for PBXNativeTarget "JustEatSwiftUITests" */;
+			buildPhases = (
+				C5F081D51C7884B900340688 /* Sources */,
+				C5F081D61C7884B900340688 /* Frameworks */,
+				C5F081D71C7884B900340688 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5F081DB1C7884B900340688 /* PBXTargetDependency */,
+			);
+			name = JustEatSwiftUITests;
+			productName = JustEatSwiftUITests;
+			productReference = C5F081D91C7884B900340688 /* JustEatSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5F081B21C7884B800340688 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Suman Chatterjee";
+				TargetAttributes = {
+					C5F081B91C7884B800340688 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					C5F081CD1C7884B900340688 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C5F081B91C7884B800340688;
+					};
+					C5F081D81C7884B900340688 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C5F081B91C7884B800340688;
+					};
+				};
+			};
+			buildConfigurationList = C5F081B51C7884B800340688 /* Build configuration list for PBXProject "JustEatSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5F081B11C7884B800340688;
+			productRefGroup = C5F081BB1C7884B800340688 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5F081B91C7884B800340688 /* JustEatSwift */,
+				C5F081CD1C7884B900340688 /* JustEatSwiftTests */,
+				C5F081D81C7884B900340688 /* JustEatSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5F081B81C7884B800340688 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F081C81C7884B900340688 /* LaunchScreen.storyboard in Resources */,
+				C5F081C51C7884B900340688 /* Assets.xcassets in Resources */,
+				C5F081C31C7884B900340688 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F081CC1C7884B900340688 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F081D71C7884B900340688 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		130637773F7EA59788E6C98E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D39B6942CE0FC7F7701955A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustEatSwift/Pods-JustEatSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2B63D6D08B270A227CF8F79 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustEatSwift/Pods-JustEatSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5F081B61C7884B800340688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5FE17DF1C78929100C5F4E2 /* ValidationUtility.swift in Sources */,
+				C5FE17E11C79AA7500C5F4E2 /* DownloadService.swift in Sources */,
+				C5F081C01C7884B800340688 /* ViewController.swift in Sources */,
+				C5FE9EA01C7A065D00BFCFAA /* JustEatDataModel.xcdatamodeld in Sources */,
+				C5F081BE1C7884B800340688 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F081CA1C7884B900340688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F081D31C7884B900340688 /* JustEatSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F081D51C7884B900340688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F081DE1C7884B900340688 /* JustEatSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5F081D01C7884B900340688 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5F081B91C7884B800340688 /* JustEatSwift */;
+			targetProxy = C5F081CF1C7884B900340688 /* PBXContainerItemProxy */;
+		};
+		C5F081DB1C7884B900340688 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5F081B91C7884B800340688 /* JustEatSwift */;
+			targetProxy = C5F081DA1C7884B900340688 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5F081C11C7884B900340688 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5F081C21C7884B900340688 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5F081C61C7884B900340688 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5F081C71C7884B900340688 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5F081E01C7884B900340688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5F081E11C7884B900340688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5F081E31C7884B900340688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED346C7A18E355E3E616682 /* Pods-JustEatSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JustEatSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.JustEatSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5F081E41C7884B900340688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BAEC5E8A12FC5F2759C8E79 /* Pods-JustEatSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JustEatSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.JustEatSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C5F081E61C7884B900340688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JustEatSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.JustEatSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustEatSwift.app/JustEatSwift";
+			};
+			name = Debug;
+		};
+		C5F081E71C7884B900340688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JustEatSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.JustEatSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustEatSwift.app/JustEatSwift";
+			};
+			name = Release;
+		};
+		C5F081E91C7884B900340688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JustEatSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.JustEatSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JustEatSwift;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C5F081EA1C7884B900340688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JustEatSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.JustEatSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JustEatSwift;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5F081B51C7884B800340688 /* Build configuration list for PBXProject "JustEatSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F081E01C7884B900340688 /* Debug */,
+				C5F081E11C7884B900340688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5F081E21C7884B900340688 /* Build configuration list for PBXNativeTarget "JustEatSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F081E31C7884B900340688 /* Debug */,
+				C5F081E41C7884B900340688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5F081E51C7884B900340688 /* Build configuration list for PBXNativeTarget "JustEatSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F081E61C7884B900340688 /* Debug */,
+				C5F081E71C7884B900340688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5F081E81C7884B900340688 /* Build configuration list for PBXNativeTarget "JustEatSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F081E91C7884B900340688 /* Debug */,
+				C5F081EA1C7884B900340688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C5FE9E9E1C7A065D00BFCFAA /* JustEatDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C5FE9E9F1C7A065D00BFCFAA /* JustEatDataModel.xcdatamodel */,
+			);
+			currentVersion = C5FE9E9F1C7A065D00BFCFAA /* JustEatDataModel.xcdatamodel */;
+			path = JustEatDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C5F081B21C7884B800340688 /* Project object */;
+}
