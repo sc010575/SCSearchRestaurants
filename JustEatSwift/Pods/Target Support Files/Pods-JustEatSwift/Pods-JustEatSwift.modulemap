@@ -1,6 +1,0 @@
-framework module Pods_JustEatSwift {
-  umbrella header "Pods-JustEatSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}
