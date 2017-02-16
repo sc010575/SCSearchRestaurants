@@ -12,8 +12,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        DownloadManager.downloadHolidays(postCode:"TW19",completionhandler: { (response,cancled) in
+            
+            guard let holidayResponses = response else {
+                return
+            }
+            
+            print("Response \(holidayResponses)")
+        //    HolidayInfoViewModel.sharedInstance.holidayBuilder(for:holidayResponses)
+            
+        })
+
+        
+        
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

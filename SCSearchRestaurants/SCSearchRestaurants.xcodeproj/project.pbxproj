@@ -13,6 +13,7 @@
 		C53F9DE31E562E1300433AC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53F9DE21E562E1300433AC4 /* Assets.xcassets */; };
 		C53F9DE61E562E1300433AC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53F9DE41E562E1300433AC4 /* LaunchScreen.storyboard */; };
 		C53F9DF11E562E1300433AC4 /* SCSearchRestaurantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53F9DF01E562E1300433AC4 /* SCSearchRestaurantsTests.swift */; };
+		C53F9DFD1E562EE200433AC4 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53F9DFC1E562EE200433AC4 /* DownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C53F9DEC1E562E1300433AC4 /* SCSearchRestaurantsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCSearchRestaurantsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C53F9DF01E562E1300433AC4 /* SCSearchRestaurantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchRestaurantsTests.swift; sourceTree = "<group>"; };
 		C53F9DF21E562E1300433AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C53F9DFC1E562EE200433AC4 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		C53F9DDA1E562E1300433AC4 /* SCSearchRestaurants */ = {
 			isa = PBXGroup;
 			children = (
+				C53F9DFB1E562E7B00433AC4 /* Services */,
 				C53F9DDB1E562E1300433AC4 /* AppDelegate.swift */,
 				C53F9DDD1E562E1300433AC4 /* ViewController.swift */,
 				C53F9DDF1E562E1300433AC4 /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				C53F9DF21E562E1300433AC4 /* Info.plist */,
 			);
 			path = SCSearchRestaurantsTests;
+			sourceTree = "<group>";
+		};
+		C53F9DFB1E562E7B00433AC4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C53F9DFC1E562EE200433AC4 /* DownloadManager.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C53F9DDE1E562E1300433AC4 /* ViewController.swift in Sources */,
+				C53F9DFD1E562EE200433AC4 /* DownloadManager.swift in Sources */,
 				C53F9DDC1E562E1300433AC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
