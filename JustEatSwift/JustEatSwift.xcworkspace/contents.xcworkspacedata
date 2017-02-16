@@ -2,10 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Master+CoreDataProperties.swift">
+      location = "group:JustEatSwift/Master+CoreDataProperties.swift">
    </FileRef>
    <FileRef
-      location = "group:Master.swift">
+      location = "group:JustEatSwift/Master.swift">
+   </FileRef>
+   <FileRef
+      location = "group:JustEatSwift/CuisineTypes+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:JustEatSwift/CuisineTypes.swift">
    </FileRef>
    <FileRef
       location = "group:JustEatSwift.xcodeproj">

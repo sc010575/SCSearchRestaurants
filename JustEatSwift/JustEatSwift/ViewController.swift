@@ -25,21 +25,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func performDownLoad(sender: AnyObject) {
+    @IBAction func performDownLoad(_ sender: AnyObject) {
         
         if postcodeTextField.text == ""{
             
-            let alertView = UIAlertController(title: "Postcode error", message: "Enter a postcode", preferredStyle: .Alert)
-            alertView.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-            self.presentViewController(alertView, animated: true, completion: nil)
+            let alertView = UIAlertController(title: "Postcode error", message: "Enter a postcode", preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alertView, animated: true, completion: nil)
             return
             
         }
         else if !self.postcodeTextField.text!.isAValidPostCode(){
             
-            let alertView = UIAlertController(title: "Postcode error", message: "Please enter a valid Postcode", preferredStyle: .Alert)
-            alertView.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-            self.presentViewController(alertView, animated: true, completion: nil)
+            let alertView = UIAlertController(title: "Postcode error", message: "Please enter a valid Postcode", preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alertView, animated: true, completion: nil)
             self.postcodeTextField.text = ""
             return
         }

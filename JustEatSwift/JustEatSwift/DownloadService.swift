@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class DownloadService: NSObject {
     
-    class func downLoadRestaurants(forPostCode:String, completionClosure: (result :Bool) -> Void)
+    class func downLoadRestaurants(_ forPostCode:String, completionClosure: @escaping (_ result :Bool) -> Void)
     {
         let headers = [
             "Accept-Tenant": "uk",
@@ -38,7 +38,7 @@ class DownloadService: NSObject {
         
     }
     
-    class func parseJSON(json: JSON) {
+    class func parseJSON(_ json: JSON) {
         let restaurantsArray = json["Restaurants"].array
         
         for result in restaurantsArray!{

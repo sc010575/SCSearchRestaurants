@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="AvailableMenu" syncable="YES"/>
+    <entity name="CuisineTypes" representedClassName=".CuisineTypes" syncable="YES">
+        <attribute name="coisineId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="isHalal" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isNew" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isOpenNow" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="master" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Master" inverseName="cuisineType" inverseEntity="Master" syncable="YES"/>
+    </entity>
     <entity name="Master" representedClassName=".Master" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logo" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="postcode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rating" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cuisineType" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CuisineTypes" inverseName="master" inverseEntity="CuisineTypes" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Master" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Master" positionX="-342" positionY="123" width="128" height="163"/>
+        <element name="CuisineTypes" positionX="-63" positionY="27" width="128" height="133"/>
+        <element name="AvailableMenu" positionX="-270" positionY="-18" width="128" height="45"/>
     </elements>
 </model>
