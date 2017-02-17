@@ -9,12 +9,13 @@
 import UIKit
 
 class DownloadManager: NSObject {
+    
     public typealias DownloadCompletionHandler = (_ response: [String: Any]?, _ cancelled: Bool) -> Void
 
     
     static func downloadHolidays(postCode:String,completionhandler:@escaping DownloadCompletionHandler)  {
         
-        let endpoint: String =  "https://public.je-apis.com/restaurants?q=se19"
+        let endpoint: String =  "https://public.je-apis.com/restaurants?q=\(postCode)"
         
         guard let url = URL(string: endpoint) else {
             print("Error: cannot create URL")
@@ -41,7 +42,7 @@ class DownloadManager: NSObject {
             if error != nil {
                 
                 print(error!.localizedDescription)
-                completionhandler(nil,false)
+                completionhandler(nil,true)
 
                 
             } else {
@@ -51,7 +52,7 @@ class DownloadManager: NSObject {
                     if let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String: Any]
                     {
                         
-                        completionhandler(json,true)
+                        completionhandler(json,false)
                     }
                     
                 } catch {

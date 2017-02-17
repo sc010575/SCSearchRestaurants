@@ -12,7 +12,7 @@
 		C53F9DE11E562E1300433AC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53F9DDF1E562E1300433AC4 /* Main.storyboard */; };
 		C53F9DE31E562E1300433AC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53F9DE21E562E1300433AC4 /* Assets.xcassets */; };
 		C53F9DE61E562E1300433AC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53F9DE41E562E1300433AC4 /* LaunchScreen.storyboard */; };
-		C53F9DF11E562E1300433AC4 /* SCSearchRestaurantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53F9DF01E562E1300433AC4 /* SCSearchRestaurantsTests.swift */; };
+		C53F9DF11E562E1300433AC4 /* SCSearchRestaurantsDownlowedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53F9DF01E562E1300433AC4 /* SCSearchRestaurantsDownlowedTests.swift */; };
 		C53F9DFD1E562EE200433AC4 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53F9DFC1E562EE200433AC4 /* DownloadManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		C53F9DE51E562E1300433AC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C53F9DE71E562E1300433AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C53F9DEC1E562E1300433AC4 /* SCSearchRestaurantsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCSearchRestaurantsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C53F9DF01E562E1300433AC4 /* SCSearchRestaurantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchRestaurantsTests.swift; sourceTree = "<group>"; };
+		C53F9DF01E562E1300433AC4 /* SCSearchRestaurantsDownlowedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchRestaurantsDownlowedTests.swift; sourceTree = "<group>"; };
 		C53F9DF21E562E1300433AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C53F9DFC1E562EE200433AC4 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +93,7 @@
 		C53F9DEF1E562E1300433AC4 /* SCSearchRestaurantsTests */ = {
 			isa = PBXGroup;
 			children = (
-				C53F9DF01E562E1300433AC4 /* SCSearchRestaurantsTests.swift */,
+				C53F9DF01E562E1300433AC4 /* SCSearchRestaurantsDownlowedTests.swift */,
 				C53F9DF21E562E1300433AC4 /* Info.plist */,
 			);
 			path = SCSearchRestaurantsTests;
@@ -220,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C53F9DF11E562E1300433AC4 /* SCSearchRestaurantsTests.swift in Sources */,
+				C53F9DF11E562E1300433AC4 /* SCSearchRestaurantsDownlowedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
